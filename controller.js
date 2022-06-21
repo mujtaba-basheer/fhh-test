@@ -157,7 +157,7 @@ export const accessoryForm = AsyncHandler(async (req, res, next) => {
     const formData = Object.assign(
       {
         LeadSourceName: "Organic",
-        LeadTypeName: "Build a Trailer",
+        LeadTypeName: "Accessory Form",
         LeadCategoryName: "fontainetrailer.com",
         CountryCode: "US",
         Brands: "Fontaine",
