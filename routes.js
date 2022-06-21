@@ -7,6 +7,7 @@ import {
   buildTrailer,
   literature,
   enquire,
+  accessoryForm,
 } from "./controller.js";
 
 const router = express.Router();
@@ -22,6 +23,9 @@ router.post("/dealer", locateDealer);
 
 // build trailer
 router.post("/build-trailer", buildTrailer);
+
+// accessory
+router.post("/accessory", accessoryForm);
 
 // literature
 router.post("/literature", literature);

@@ -81,10 +81,12 @@ class ApiCall {
           body: JSON.stringify(data),
         })
           .then((resp) => {
+            return resp.json();
             if (resp.ok) return resp.json();
             else throw new HTTPResponseError(resp.status);
           })
           .then((resp) => {
+            console.log(JSON.stringify(resp));
             if (!resp["TopLevelError"]) res(resp);
             else throw new HTTPResponseError(400, "Bad Request");
           })
