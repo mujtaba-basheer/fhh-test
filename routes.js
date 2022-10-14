@@ -8,6 +8,7 @@ import {
   literature,
   enquire,
   accessoryForm,
+  literatureForms,
 } from "./controller.js";
 
 const router = express.Router();
@@ -29,6 +30,9 @@ router.post("/accessory", accessoryForm);
 
 // literature
 router.post("/literature", literature);
+
+// literature forms
+router.post("/literature-forms", literatureForms);
 
 // enquire
 router.post("/enquire", enquire);
