@@ -215,7 +215,7 @@ export const literature = AsyncHandler(async (req, res, next) => {
   }
 });
 
-// Literature: POST
+// Literature Forms: POST
 export const literatureForms = AsyncHandler(async (req, res, next) => {
   try {
     const ipAddress = req.headers["x-forwared-for"] || req.socket.remoteAddress;
@@ -269,7 +269,7 @@ export const enquire = AsyncHandler(async (req, res, next) => {
       },
       req.body
     );
-    console.log(JSON.stringify(formData));
+    // console.log(JSON.stringify(formData));
     const data = [formData];
     await api.postReq("/marketing/api/lead?manufacturer=FT", data);
 

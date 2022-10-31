@@ -27,7 +27,5 @@ app.use(errorHandler);
 const port = process.env.PORT || 5001;
 app.listen(
   port,
-  console.log(
-    `FHH Test Server running in ${process.env.NODE_ENV} on port ${port}...`
-  )
+  console.log(`Server running in ${process.env.NODE_ENV} on port ${port}...`)
 );
